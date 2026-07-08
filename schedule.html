@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Schedule | High School Planner</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<button class="menu-btn" onclick="toggleSidebar()">
+☰
+</button>
+
+
+
+
+
+
+
+<aside class="sidebar" id="sidebar">
+
+
+<h1>
+🎓 Planner
+</h1>
+
+
+
+
+<div class="student-box">
+
+
+<div class="avatar">
+👨‍🎓
+</div>
+
+
+<h3>
+Student
+</h3>
+
+
+<p>
+High School Planner
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="homework.html">
+
+📚 Homework
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="schedule.html">
+
+📅 Schedule
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="calendar.html">
+
+🗓 Calendar
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="settings.html">
+
+⚙ Settings
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main class="content">
+
+
+
+
+
+
+<div class="hero-card">
+
+
+<h1>
+📅 My School Schedule
+</h1>
+
+
+<p>
+Create your own weekly school timetable.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+➕ Add Class
+</h2>
+
+
+
+
+
+<select id="day">
+
+
+<option>
+Monday
+</option>
+
+
+<option>
+Tuesday
+</option>
+
+
+<option>
+Wednesday
+</option>
+
+
+<option>
+Thursday
+</option>
+
+
+<option>
+Friday
+</option>
+
+
+</select>
+
+
+
+
+
+<input
+id="time"
+placeholder="Class time">
+
+
+
+
+<input
+id="subject"
+placeholder="Subject">
+
+
+
+
+
+<input
+id="teacher"
+placeholder="Teacher name">
+
+
+
+
+
+<input
+id="room"
+placeholder="Room number">
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="addClass()">
+
+Add Class +
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+🏫 My Timetable
+</h2>
+
+
+
+<div id="scheduleList">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="../js/schedule.js"></script>
+
+
+<script src="../js/sidebar.js"></script>
+
+
+
+</body>
+
+
+</html>

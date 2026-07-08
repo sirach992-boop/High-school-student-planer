@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard | High School Planner</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<button class="menu-btn" onclick="toggleSidebar()">
+☰
+</button>
+
+
+
+
+
+<aside class="sidebar" id="sidebar">
+
+
+<h1>
+🎓 Planner
+</h1>
+
+
+
+<div class="student-box">
+
+
+<div class="avatar">
+👨‍🎓
+</div>
+
+
+
+<h3 id="sideName">
+
+Student
+
+</h3>
+
+
+<p>
+High School Planner
+</p>
+
+
+</div>
+
+
+
+
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="homework.html">
+
+📚 Homework
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="schedule.html">
+
+📅 Schedule
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="calendar.html">
+
+🗓 Calendar
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="settings.html">
+
+⚙ Settings
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main class="content">
+
+
+
+
+
+
+<div class="hero-card">
+
+
+<h1>
+
+👋 Welcome back, 
+<span id="welcomeName">
+Student
+</span>
+
+!
+
+</h1>
+
+
+
+<p>
+
+Stay organized and achieve your goals.
+
+</p>
+
+
+<h3 id="date"></h3>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="dashboard-cards">
+
+
+
+
+
+<div class="dashboard-box blue">
+
+
+<h2>
+📚 Homework
+</h2>
+
+
+<h1 id="homeworkCount">
+0
+</h1>
+
+
+<p>
+Tasks
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="dashboard-box purple">
+
+
+<h2>
+📅 Schedule
+</h2>
+
+
+<h1>
+✓
+</h1>
+
+
+<p>
+Ready
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="dashboard-box orange">
+
+
+<h2>
+⭐ Goals
+</h2>
+
+
+<h1>
+3
+</h1>
+
+
+<p>
+Today
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+🚀 Quick Start
+</h2>
+
+
+<a href="homework.html">
+
+<button>
+
+➕ Add Homework
+
+</button>
+
+</a>
+
+
+
+<a href="calendar.html">
+
+<button>
+
+🗓 Add Event
+
+</button>
+
+</a>
+
+
+
+<a href="schedule.html">
+
+<button>
+
+📅 Edit Schedule
+
+</button>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="quote-card">
+
+
+<h2>
+💡 Daily Motivation
+</h2>
+
+
+<p>
+
+Success comes from small steps every day.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/planner.js"></script>
+
+<script src="../js/sidebar.js"></script>
+
+
+
+<script>
+
+
+document.getElementById("date").innerHTML =
+
+new Date().toDateString();
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Homework | High School Planner</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<button class="menu-btn" onclick="toggleSidebar()">
+☰
+</button>
+
+
+
+
+
+
+<aside class="sidebar" id="sidebar">
+
+
+<h1>
+🎓 Planner
+</h1>
+
+
+
+<div class="student-box">
+
+
+<div class="avatar">
+👨‍🎓
+</div>
+
+
+<h3>
+Student
+</h3>
+
+
+<p>
+High School Planner
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="homework.html">
+
+📚 Homework
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="schedule.html">
+
+📅 Schedule
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="calendar.html">
+
+🗓 Calendar
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="settings.html">
+
+⚙ Settings
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main class="content">
+
+
+
+
+
+<div class="hero-card">
+
+
+<h1>
+📚 Homework Center
+</h1>
+
+
+<p>
+Create, manage, and complete your assignments.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+➕ Add New Homework
+</h2>
+
+
+
+
+
+<input
+id="title"
+placeholder="Homework name">
+
+
+
+
+
+<input
+id="subject"
+placeholder="Subject">
+
+
+
+
+
+<input
+id="date"
+type="date">
+
+
+
+
+
+<select id="priority">
+
+
+<option>
+🔥 High Priority
+</option>
+
+
+<option>
+⭐ Medium Priority
+</option>
+
+
+<option>
+🌱 Low Priority
+</option>
+
+
+</select>
+
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="addHomework()">
+
+Add Homework +
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+📌 My Homework
+</h2>
+
+
+
+<div id="homeworkList">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="../js/homework.js"></script>
+
+
+<script src="../js/sidebar.js"></script>
+
+
+
+
+</body>
+
+
+</html>

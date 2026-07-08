@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Planner</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<aside class="sidebar">
+
+
+<h1>🎓 Planner</h1>
+
+
+<div class="student-card">
+
+<div class="avatar">
+👨‍🎓
+</div>
+
+<h3>
+Student
+</h3>
+
+<p>
+High School Planner
+</p>
+
+</div>
+
+
+
+
+
+<ul>
+
+
+<li onclick="showPage('dashboard')">
+🏠 Dashboard
+</li>
+
+
+<li onclick="showPage('homework')">
+📚 Homework
+</li>
+
+
+<li onclick="showPage('schedule')">
+📅 Schedule
+</li>
+
+
+<li onclick="showPage('calendar')">
+🗓 Calendar
+</li>
+
+
+<li onclick="showPage('settings')">
+⚙ Settings
+</li>
+
+
+</ul>
+
+
+
+<button onclick="logout()">
+🚪 Logout
+</button>
+
+
+</aside>
+
+
+
+
+
+
+
+
+<main class="content">
+
+
+
+
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="page">
+
+
+<div class="hero">
+
+
+<div>
+
+<h1>
+Good Morning 👋
+</h1>
+
+
+<p>
+Ready to make today productive?
+</p>
+
+
+</div>
+
+
+
+<div class="level">
+
+
+⭐ Level 1
+
+<br>
+
+Student
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="cards">
+
+
+
+<div class="big-card blue">
+
+
+<h2>
+📚 Homework
+</h2>
+
+
+<h1 id="homeworkCount">
+0
+</h1>
+
+
+<p>
+Assignments left
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="big-card purple">
+
+
+<h2>
+📅 Classes
+</h2>
+
+
+<h1 id="classCount">
+0
+</h1>
+
+
+<p>
+This week
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="big-card orange">
+
+
+<h2>
+🔥 Goals
+</h2>
+
+
+<h1>
+3
+</h1>
+
+
+<p>
+Daily targets
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="dashboard-section">
+
+
+<h2>
+🚀 Quick Actions
+</h2>
+
+
+<button onclick="showPage('homework')">
+➕ Add Homework
+</button>
+
+
+<button onclick="showPage('schedule')">
+➕ Add Class
+</button>
+
+
+<button onclick="showPage('calendar')">
+➕ Add Event
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="dashboard-section">
+
+
+<h2>
+📌 Today's Plan
+</h2>
+
+
+
+<div class="task">
+
+✅ Finish assignments
+
+</div>
+
+
+<div class="task">
+
+📖 Study for exams
+
+</div>
+
+
+<div class="task">
+
+🏃 Take a break
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="quote">
+
+
+<h2>
+💡 Motivation
+</h2>
+
+
+<p>
+"Success comes from small steps every day."
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- OTHER PAGES -->
+
+
+<section id="homework" class="page hidden">
+
+<h1>
+📚 Homework
+</h1>
+
+<div id="homeworkList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="schedule" class="page hidden">
+
+
+<h1>
+📅 Schedule
+</h1>
+
+
+<div id="scheduleList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="calendar" class="page hidden">
+
+
+<h1>
+🗓 Calendar
+</h1>
+
+
+<div id="calendarList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="settings" class="page hidden">
+
+
+<h1>
+⚙ Settings
+</h1>
+
+
+<p>
+Customize your planner
+</p>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="js/homework.js"></script>
+
+<script src="js/planner.js"></script>
+
+<script src="js/calendar.js"></script>
+
+<script src="js/settings.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>

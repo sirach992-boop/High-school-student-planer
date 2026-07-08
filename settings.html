@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Settings | High School Planner</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<button class="menu-btn" onclick="toggleSidebar()">
+☰
+</button>
+
+
+
+
+
+
+
+<aside class="sidebar" id="sidebar">
+
+
+<h1>
+🎓 Planner
+</h1>
+
+
+
+
+
+<div class="student-box">
+
+
+<div class="avatar">
+👨‍🎓
+</div>
+
+
+<h3>
+Student
+</h3>
+
+
+<p>
+High School Planner
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="homework.html">
+
+📚 Homework
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="schedule.html">
+
+📅 Schedule
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="calendar.html">
+
+🗓 Calendar
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="settings.html">
+
+⚙ Settings
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main class="content">
+
+
+
+
+
+
+<div class="hero-card">
+
+
+<h1>
+⚙ Settings
+</h1>
+
+
+<p>
+Customize your student planner.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+👤 Student Profile
+</h2>
+
+
+
+<input
+id="studentName"
+placeholder="Your Name">
+
+
+
+
+
+<input
+id="studentGrade"
+placeholder="Your Grade">
+
+
+
+
+
+<input
+id="schoolName"
+placeholder="School Name">
+
+
+
+
+
+<br><br>
+
+
+
+<button onclick="saveSettings()">
+
+💾 Save Profile
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+🎨 Appearance
+</h2>
+
+
+
+
+<select id="theme">
+
+
+<option value="light">
+
+☀ Light Mode
+
+</option>
+
+
+
+<option value="dark">
+
+🌙 Dark Mode
+
+</option>
+
+
+
+</select>
+
+
+
+
+<br><br>
+
+
+
+<button onclick="changeTheme()">
+
+Apply Theme
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+📜 Planner Rules
+</h2>
+
+
+
+<div class="goal">
+
+✅ Use the planner for school organization.
+
+</div>
+
+
+
+<div class="goal">
+
+🤝 Respect other students and users.
+
+</div>
+
+
+
+<div class="goal">
+
+🚫 Do not upload harmful content.
+
+</div>
+
+
+
+<div class="goal">
+
+🔐 Keep your account information safe.
+
+</div>
+
+
+
+<div class="goal">
+
+⚠ Do not try to damage the website.
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+<label>
+
+
+<input type="checkbox" id="acceptRules">
+
+
+I agree to follow the rules
+
+
+</label>
+
+
+
+
+<br><br>
+
+
+
+<button onclick="acceptRules()">
+
+Accept Rules
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+🗑 Data Management
+</h2>
+
+
+
+<p>
+
+Delete all saved homework, schedule, and events.
+
+</p>
+
+
+
+<button onclick="resetPlanner()">
+
+Reset Planner
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section-card">
+
+
+<h2>
+🔐 Account
+</h2>
+
+
+
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="../js/settings.js"></script>
+
+
+<script src="../js/sidebar.js"></script>
+
+
+
+
+</body>
+
+
+</html>
